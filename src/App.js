@@ -1,16 +1,20 @@
 import React from "react";
-import Footer from "./Footer/Footer";
-import Header from "./Header/Header";
-import IplTeams from "./IPLTEAMS/IplTeams";
+import Teams from "./Teams/Teams";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home/Home";
 
 const App = () => {
   return (
     <div>
-      <Header />
-      <IplTeams />
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Teams" element={<Teams />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
 
 export default App;
+
