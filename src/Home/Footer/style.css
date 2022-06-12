@@ -1,0 +1,14 @@
+footer {
+  margin-top: 25px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  align-items: center;
+}
+.footerDiv {
+  align-items: center;
+}
+.footerText {
+  /* margin-top: 25px; */
+  padding-top: 25px;
+}
